@@ -1,3 +1,6 @@
+* { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+
 /* HTML, box model, and Flexbox baseline from the first half of the course. */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -46,4 +49,21 @@ body.dark-mode .card, body.dark-mode #contact { background-color: #333; color: #
 body.dark-mode a { color: #9bdfff; }
 body.dark-mode button, body.dark-mode input, body.dark-mode textarea {
   background-color: #444; color: #fff; border: 1px solid #888;
+}
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .card, #gallery-img {
+    max-width: 100%;
+  }
+
+  button {
+    min-height: 44px;
+  }
 }
