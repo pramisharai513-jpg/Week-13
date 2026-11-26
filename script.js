@@ -8,7 +8,7 @@ console.log(myName);
 myName = "Pramisha";
 console.log(myName);
 
-const birthYear = 2004;
+const birthYear = 2007;
 console.log(birthYear);
 
 
